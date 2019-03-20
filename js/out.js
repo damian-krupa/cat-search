@@ -315,7 +315,7 @@ var CatTable = exports.CatTable = function (_React$Component) {
                 _react2.default.createElement(
                     'tbody',
                     null,
-                    _react2.default.createElement(
+                    this.male.length > 0 && _react2.default.createElement(
                         'tr',
                         null,
                         _react2.default.createElement(
@@ -327,7 +327,7 @@ var CatTable = exports.CatTable = function (_React$Component) {
                     this.male.map(function (maleKitty) {
                         return _react2.default.createElement(_CatRow.CatRow, { kitty: maleKitty });
                     }),
-                    _react2.default.createElement(
+                    this.female.length > 0 && _react2.default.createElement(
                         'tr',
                         null,
                         _react2.default.createElement(
@@ -460,7 +460,7 @@ var _App = __webpack_require__(/*! ./Components/App */ "./js/Components/App.js")
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var kitties = [{ category: "male", age: "4", likesKids: true, name: "Fidel Catstro" }, { category: "male", age: "9", likesKids: true, name: "Hairy Potter" }, { category: "male", age: "2", likesKids: false, name: "Grumpy" }, { category: "female", age: "1", likesKids: true, name: "Jude Paw" }, { category: "female", age: "2", likesKids: false, name: "Lucifurr" }, { category: "female", age: "3", likesKids: true, name: "Meowly Cyrus" }];
+var kitties = [{ category: "male", age: "4", likesKids: true, name: "Fidel Catstro" }, { category: "male", age: "9", likesKids: true, name: "Hairy Potter" }, { category: "male", age: "2", likesKids: false, name: "Grumpy" }, { category: "male", age: "3", likesKids: true, name: "David Meowie" }, { category: "male", age: "8", likesKids: true, name: "Cat Stevens" }, { category: "male", age: "2", likesKids: false, name: "Lucifurr" }, { category: "male", age: "4", likesKids: true, name: "Santa Claws" }, { category: "male", age: "9", likesKids: true, name: "Cat Damon" }, { category: "male", age: "2", likesKids: false, name: "Chairman Meow" }, { category: "male", age: "3", likesKids: true, name: "Fuzz Aldrin" }, { category: "male", age: "8", likesKids: true, name: "Luke Skywhisker" }, { category: "male", age: "2", likesKids: false, name: "Genghis Cat" }, { category: "female", age: "1", likesKids: true, name: "Cat Middleton" }, { category: "female", age: "2", likesKids: false, name: "Catzilla" }, { category: "female", age: "3", likesKids: true, name: "Meowly Cyrus" }, { category: "female", age: "6", likesKids: true, name: "Katy Purry" }, { category: "female", age: "4", likesKids: false, name: "Catastrophe" }, { category: "female", age: "5", likesKids: true, name: "Puma Thurman" }, { category: "female", age: "1", likesKids: true, name: "Catalie Portman" }, { category: "female", age: "2", likesKids: false, name: "Empurress" }, { category: "female", age: "3", likesKids: true, name: "JK Meowling" }, { category: "female", age: "6", likesKids: true, name: "Katy Purry" }, { category: "female", age: "4", likesKids: false, name: "Clawdia" }, { category: "female", age: "5", likesKids: true, name: "Cindy Clawford" }];
 
 document.addEventListener('DOMContentLoaded', function () {
     _reactDom2.default.render(_react2.default.createElement(_App.App, { kitties: kitties }), document.getElementById('app'));
